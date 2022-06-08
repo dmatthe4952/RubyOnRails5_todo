@@ -1,0 +1,9 @@
+<h1 style="text-align:center;">Show</h1>
+<% if flash[:notice] %>
+  <p><%=flash[:notice]%>]
+    <ul>
+      <li><%=@todo.name%></li>
+      <li><%=@todo.description%></li>
+    </ul>
+  </p>
+<%end%>
