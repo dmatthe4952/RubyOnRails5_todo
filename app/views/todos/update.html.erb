@@ -1,0 +1,12 @@
+<h1 style="text-align:center;">Updated</h1>
+<% if flash[:notice] %>
+  <p><%=flash[:notice]%>]
+  </p>
+<%end%>
+<p>
+  <ul>
+    <li><%=params[:todo][:name]%></li>
+    <li><%=params[:todo][:description]%></li>
+  </ul>
+</p>
+<%= link_to "Back to todos listing", todos_path %>
